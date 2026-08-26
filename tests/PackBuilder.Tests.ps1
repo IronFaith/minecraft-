@@ -31,6 +31,19 @@ function Assert-Throws {
     throw "Expected an error containing '$MessageFragment', but no error was thrown."
 }
 
+function Test-ZipEntry {
+    param([string] $ZipPath, [string] $EntryName)
+    Add-Type -AssemblyName System.IO.Compression.FileSystem
+    $archive = [System.IO.Compression.ZipFile]::OpenRead($ZipPath)
+    try {
+        $normalizedName = $EntryName -replace '\\', '/'
+        return $null -ne ($archive.Entries | Where-Object { $_.FullName -eq $normalizedName } | Select-Object -First 1)
+    }
+    finally {
+        $archive.Dispose()
+    }
+}
+
 function Invoke-Test {
     param([string] $Name, [scriptblock] $Action)
     try {
@@ -129,6 +142,30 @@ try {
             $config = Read-PackConfiguration -ConfigPath $fixture.ConfigPath
             Get-AssetInventory -Config $config -ProjectRoot $fixture.ProjectRoot
         } 'Asset collision'
+    }
+
+    Invoke-Test 'build produces a correctly revisioned root-level release' {
+        $fixture = New-PackFixture -Formats @('scalar', 'array')
+        $first = Invoke-WolfHousePackBuild -ProjectRoot $fixture.ProjectRoot -ConfigPath $fixture.ConfigPath
+        Assert-Equal 1 $first.Revision
+        Assert-Equal $true $first.Changed
+        Assert-Equal 40 $first.Sha1.Length
+        Assert-Equal 64 $first.Sha256.Length
+        Assert-True (Test-ZipEntry $first.ZipPath 'pack.mcmeta') 'ZIP is missing root pack.mcmeta.'
+        Assert-True (Test-ZipEntry $first.ZipPath 'pack.png') 'ZIP is missing root pack.png.'
+        Assert-True (Test-ZipEntry $first.ZipPath 'assets/buddypack/models/item/example.json') 'ZIP is missing the BuddyPack fixture asset.'
+        Assert-True (Test-ZipEntry $first.ZipPath 'assets/wolfteams/textures/item/example.png') 'ZIP is missing the WolfTeams fixture asset.'
+        Assert-True (-not (Test-ZipEntry $first.ZipPath 'WolfHouse-ResourcePack/pack.mcmeta')) 'ZIP contains an unwanted enclosing folder.'
+
+        $same = Invoke-WolfHousePackBuild -ProjectRoot $fixture.ProjectRoot -ConfigPath $fixture.ConfigPath
+        Assert-Equal 1 $same.Revision
+        Assert-Equal $false $same.Changed
+        Assert-Equal $first.Sha1 $same.Sha1
+
+        Set-Content -LiteralPath $fixture.BuddyAsset -Value '{"changed":true}' -NoNewline
+        $changed = Invoke-WolfHousePackBuild -ProjectRoot $fixture.ProjectRoot -ConfigPath $fixture.ConfigPath
+        Assert-Equal 2 $changed.Revision
+        Assert-Equal $true $changed.Changed
     }
 }
 finally {
