@@ -1,0 +1,17 @@
+{
+  "packFormat": 88,
+  "resourcePackId": "38fc313c-e7c0-4b09-95ef-bf4f49e8f72d",
+  "prompt": "WolfHouse uses a custom resource pack for BuddyPack, WolfTeams, and other server features.",
+  "downloadUrlMarker": "UPLOAD_DIRECT_DOWNLOAD_URL_HERE",
+  "sources": [
+    {
+      "name": "BuddyPack",
+      "path": "../BuddyPack/resource-pack"
+    },
+    {
+      "name": "WolfTeams",
+      "path": "../WolfTeams/resourcepack"
+    }
+  ]
+}
+
