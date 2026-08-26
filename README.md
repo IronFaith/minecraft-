@@ -18,7 +18,7 @@ Every release includes:
 - `.sha1`: the value Minecraft requires in `server.properties`
 - `.sha256`: an independent integrity check
 - `-build-report.txt`: included plugins, file counts, and hashes
-- `-server.properties.txt`: safe copy-and-paste settings with an upload URL marker
+- `-server.properties.txt`: safe copy-and-paste settings containing the permanent GitHub URL
 
 The builder does not upload anything, edit the live server, or restart it.
 
@@ -28,10 +28,16 @@ For a new BuddyPack outfit or color:
 
 1. Add or change the asset in `C:\Users\wolfh\IdeaProjects\BuddyPack\resource-pack\assets`.
 2. Run the WolfHouse build command.
-3. Upload the new numbered ZIP.
-4. Replace `UPLOAD_DIRECT_DOWNLOAD_URL_HERE` in the generated server template with the public direct-download URL.
-5. Copy the five resource-pack settings into `server.properties` and restart normally.
+3. Publish a new GitHub Release (`r2`, `r3`, and so on) and upload the ZIP with the constant asset name `WolfHouse-ResourcePack.zip`.
+4. Keep the existing permanent `resource-pack` URL and update `resource-pack-sha1` from the generated server template.
+5. Restart normally.
 6. Join with a clean client resource-pack cache and visually check Buddy models and WolfTeams menus.
+
+The permanent download URL is:
+
+```text
+https://github.com/IronFaith/minecraft-/releases/latest/download/WolfHouse-ResourcePack.zip
+```
 
 WolfTeams updates follow the same steps using `C:\Users\wolfh\IdeaProjects\WolfTeams\resourcepack\assets`.
 
