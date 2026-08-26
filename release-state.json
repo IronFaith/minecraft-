@@ -1,0 +1,18 @@
+﻿{
+    "revision":  1,
+    "fingerprint":  "CE96521E1BF00C984F91913D3C9C1817943BC289CA1869152A51AABE5BFE6618",
+    "zipFile":  "WolfHouse-ResourcePack-r1.zip",
+    "sha1":  "9B88E54FB609E98C41B668C52CED79552E93E1A2",
+    "sha256":  "2844D9F90EAB12462F041DB0ECC6B1FFF7C45C938D6B7AC9784AFB64A30F438B",
+    "builtAtUtc":  "2026-08-26T03:47:36.5038369Z",
+    "sources":  [
+                    {
+                        "Name":  "BuddyPack",
+                        "Count":  121
+                    },
+                    {
+                        "Name":  "WolfTeams",
+                        "Count":  232
+                    }
+                ]
+}
