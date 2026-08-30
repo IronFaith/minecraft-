@@ -1,6 +1,6 @@
 # WolfHouse Resource Pack Builder
 
-This project combines the latest Java resource files from BuddyPack and WolfTeams into one server-ready WolfHouse ZIP. The original plugin projects remain the source of truth; this project does not keep duplicate copies of their assets.
+This project combines the latest Java resource files from BuddyPack, WolfTeams, WolfSabers, and WolfPhone into one server-ready WolfHouse ZIP. The original plugin projects remain the source of truth; this project does not keep duplicate copies of their assets.
 
 ## Build the pack
 

@@ -15,6 +15,10 @@
     {
       "name": "WolfSabers",
       "path": "../WolfSabers/resource-pack"
+    },
+    {
+      "name": "WolfPhone",
+      "path": "../WolfPhone/resource-pack"
     }
   ]
 }
