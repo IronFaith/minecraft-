@@ -1,10 +1,10 @@
 {
-  "revision": 7,
-  "fingerprint": "02A60F9A8297BE42450898106CC9EB578D12DE951F9FD5E9DFAE904C812EBDCF",
-  "zipFile": "WolfHouse-ResourcePack-r7.zip",
-  "sha1": "2BC4B763EF6D28367F8FBE838513775CD098CDB4",
-  "sha256": "7AB4E2DE795999C84BC52B8768D1B09EBE58DA2F3D7D871539711C57B43E571A",
-  "builtAtUtc": "2026-08-30T09:01:40.9363178Z",
+  "revision": 8,
+  "fingerprint": "4DDDDC2AE82A1FAE45BDBA2C07692B3233BED7BE8EF3FD602C6B3F6DB7158D4C",
+  "zipFile": "WolfHouse-ResourcePack-r8.zip",
+  "sha1": "8E02E8B43572F19A4ECF0C7CECC367BD522CB964",
+  "sha256": "07FCA0538F7D1B21BF49EDBEF19AC0572F769A9685685524A4CB21895EC8F0AA",
+  "builtAtUtc": "2026-08-30T09:22:35.2552487Z",
   "sources": [
     {
       "Name": "BuddyPack",
@@ -12,7 +12,7 @@
     },
     {
       "Name": "WolfSabers",
-      "Count": 130
+      "Count": 139
     },
     {
       "Name": "WolfTeams",
