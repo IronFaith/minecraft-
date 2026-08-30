@@ -11,6 +11,10 @@
     {
       "name": "WolfTeams",
       "path": "../WolfTeams/resourcepack"
+    },
+    {
+      "name": "WolfSabers",
+      "path": "../WolfSabers/resource-pack"
     }
   ]
 }
