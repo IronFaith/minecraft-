@@ -1,10 +1,10 @@
 {
-  "revision": 16,
-  "fingerprint": "96CB217B8C73BFEADA429C79B1AD47DB082DF582CD66C3A2B3FDBE36392642F3",
-  "zipFile": "WolfHouse-ResourcePack-r16.zip",
-  "sha1": "D708F744262FE014B8455EB89985514259E11ED7",
-  "sha256": "C74168A2139681CF920A2B8FFA854F554828BC0C451BA3B131798C0E92F00380",
-  "builtAtUtc": "2026-08-30T22:07:28.3028258Z",
+  "revision": 17,
+  "fingerprint": "4A9340DDE41521C00E820EA54AE3BA87BDAE3F5E6BC8E56FF10133289DDAB13D",
+  "zipFile": "WolfHouse-ResourcePack-r17.zip",
+  "sha1": "ADA885ECAD0339777182D248279F33DCE469BB6E",
+  "sha256": "EF9C9AFE80140B9F00B889BE3A14BD68EA83CF2CAB4EDFBD58694C8DC3AB3F7C",
+  "builtAtUtc": "2026-09-02T03:32:16.1584436Z",
   "sources": [
     {
       "Name": "BuddyPack",
@@ -12,7 +12,7 @@
     },
     {
       "Name": "WolfPhone",
-      "Count": 3
+      "Count": 4
     },
     {
       "Name": "WolfSabers",
