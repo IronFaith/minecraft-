@@ -4,9 +4,9 @@ The supplied transparent artwork is retained in originals/wolfcraft.png. The
 256 x 151 texture is an aspect-preserving font-atlas export of that artwork.
 Only assets/ is collected by the master pack builder.
 
-Both fonts map U+E100 to the same logo at 48 GUI pixels high (about 81 wide).
-logo_header uses ascent 8 and needs five empty header lines after the glyph.
-logo_sidebar uses ascent 47 so the logo extends above the scoreboard title
+Both fonts map U+E100 to the same logo at 24 GUI pixels high (about 41 wide).
+logo_header uses ascent 8 and needs two empty header lines after the glyph.
+logo_sidebar uses ascent 23 so the logo extends above the scoreboard title
 without covering the first statistics row. Exact positioning requires an
 in-game check with the player's GUI scale.
 
