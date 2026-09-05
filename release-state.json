@@ -1,14 +1,18 @@
 {
-  "revision": 20,
-  "fingerprint": "B241B439322251371F24B726A5874BD3568E38ADE2BDD76BBCEDC48D1BBB65D6",
-  "zipFile": "WolfHouse-ResourcePack-r20.zip",
-  "sha1": "E079CB9CD8D4EEF61668D0CD87287CAB5C518575",
-  "sha256": "74AE1FDDD199407B978611FDA180C692CDB37E40D9D30A1F5A4BC17DCECC411D",
-  "builtAtUtc": "2026-09-03T03:49:39.7056191Z",
+  "revision": 21,
+  "fingerprint": "1F6E563C307A875074CC155D1A2AD2044443260056E781A8BB993A08EED88B86",
+  "zipFile": "WolfHouse-ResourcePack-r21.zip",
+  "sha1": "657270891C7EFA882E1CC586FEDF3FAE66ADDDF1",
+  "sha256": "7A654D996B53A4E81C7F9F11ED438A4B4EB868291B340BF0A2360181B00B8541",
+  "builtAtUtc": "2026-09-05T10:24:33.6723942Z",
   "sources": [
     {
       "Name": "BuddyPack",
       "Count": 121
+    },
+    {
+      "Name": "WolfCraftBranding",
+      "Count": 3
     },
     {
       "Name": "WolfPhone",

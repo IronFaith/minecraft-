@@ -1,0 +1,13 @@
+{
+  "providers": [
+    {
+      "chars": [
+        ""
+      ],
+      "file": "wolfhouse:font/wolfcraft.png",
+      "ascent": 47,
+      "height": 48,
+      "type": "bitmap"
+    }
+  ]
+}

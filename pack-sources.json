@@ -19,6 +19,10 @@
     {
       "name": "WolfPhone",
       "path": "../WolfPhone/resource-pack"
+    },
+    {
+      "name": "WolfCraftBranding",
+      "path": "branding"
     }
   ]
 }
