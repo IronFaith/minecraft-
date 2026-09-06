@@ -1,10 +1,10 @@
 {
-  "revision": 26,
-  "fingerprint": "75A8E934A5C590DC4783625FA4FFAEC96D751E25D1BF18945C43AFE6CC890602",
-  "zipFile": "WolfHouse-ResourcePack-r26.zip",
-  "sha1": "6299F5AC8A9F13E43BB47279150D58F3E871BBB8",
-  "sha256": "D35FB21584E5E23F42FA0655BE0EFF9887979EA757FB815A7A6C8E51DA8978BE",
-  "builtAtUtc": "2026-09-06T04:45:39.9751800Z",
+  "revision": 27,
+  "fingerprint": "6CA67DB164CFE80FFF80DFF84387EE84565CF151E45CDA489C3300663590BD17",
+  "zipFile": "WolfHouse-ResourcePack-r27.zip",
+  "sha1": "05AE9AD441F61594723D6C46B1D38CC095B469A3",
+  "sha256": "A2B9612DA94DD5DD2DC31FFD2C0910116F9EA6353D71C5160F8F2B8E17FB6A83",
+  "builtAtUtc": "2026-09-06T21:27:32.9109146Z",
   "sources": [
     {
       "Name": "BuddyPack",
@@ -12,7 +12,7 @@
     },
     {
       "Name": "WolfCars",
-      "Count": 51
+      "Count": 62
     },
     {
       "Name": "WolfCraftBranding",

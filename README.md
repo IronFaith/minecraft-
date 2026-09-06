@@ -76,11 +76,11 @@ The three checks cover source inventory and pack-format handling, collision reje
 
 WolfCars assets come from the stable sibling checkout `../WolfCars-release/resource-pack`.
 Create that checkout from the private `IronFaith/WolfCars` repository; the initial accepted
-release was tag `v1.0.15`. The current accepted release is tag `v1.0.17`,
-commit `e6dbacf3ebe2233e763f22114877ad7b7593b775`.
+release was tag `v1.0.15`. The current accepted release is tag `v1.0.22`,
+commit `99b90ec7ecf8e61f26995a6b69a3a0adb9d8935e`.
 Keep this checkout on an accepted release when preparing the master pack. The development
 checkout and unfinished vehicle work remain independent. The pack includes the Corvette,
-Toyota-style Trail 4x4, Countach, Challenger, Ducati, runabout, and yacht models.
+Toyota-style Trail 4x4, Countach, Challenger, Ducati, runabout, drill buggy, and yacht models.
 
 The source repository is private; its rendered resource-pack assets become downloadable
 with the public master pack when that release is approved and published. Plugin JARs are
@@ -92,3 +92,9 @@ floodlight lenses and original starting, idle and rev audio. Its contents match 
 accepted local equipment pack r29; local trial numbers and master release numbers
 are independent. Pair r26 with WolfCars 1.0.17 for the accepted acceleration, public
 truck cargo, floodlights, engine audio and pedestrian boundaries.
+
+Master pack r27 preserves all 552 r26 files and adds eleven WolfCars drill buggy
+assets. Its 563 files exactly match the accepted local drill pack r32. Pair r27
+with WolfCars 1.0.22 for the enlarged spinning drill, shared truck-style headlights,
+uneven-ground gravity fixes, parked climbing surfaces, and moving player impacts.
+The accepted plugin JAR is promoted unchanged after local gameplay approval.
