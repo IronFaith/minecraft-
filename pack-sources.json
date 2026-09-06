@@ -23,6 +23,10 @@
     {
       "name": "WolfCraftBranding",
       "path": "branding"
+    },
+    {
+      "name": "WolfCars",
+      "path": "../WolfCars-release/resource-pack"
     }
   ]
 }

@@ -1,6 +1,6 @@
 # WolfHouse Resource Pack Builder
 
-This project combines the latest Java resource files from BuddyPack, WolfTeams, WolfSabers, and WolfPhone into one server-ready WolfHouse ZIP. The original plugin projects remain the source of truth; this project does not keep duplicate copies of their assets.
+This project combines the latest Java resource files from BuddyPack, WolfTeams, WolfSabers, WolfPhone, WolfCraft branding, and WolfCars into one server-ready WolfHouse ZIP. The original plugin projects remain the source of truth; this project does not keep duplicate copies of their assets.
 
 ## Build the pack
 
@@ -71,3 +71,17 @@ powershell -NoProfile -ExecutionPolicy Bypass -File .\tests\PackBuilder.Tests.ps
 ```
 
 The three checks cover source inventory and pack-format handling, collision rejection, and root-level ZIP/revision behavior.
+
+## WolfCars release source
+
+WolfCars assets come from the stable sibling checkout `../WolfCars-release/resource-pack`.
+Create that checkout from the private `IronFaith/WolfCars` repository; the initial accepted
+release is tag `v1.0.15`, commit `36d9df6e90b453a91e156f6a5ff68308c291f9d4`.
+Keep this checkout on an accepted release when preparing the master pack. The development
+checkout and unfinished vehicle work remain independent. The pack includes the Corvette,
+Toyota-style Trail 4x4, Countach, Challenger, Ducati, runabout, and yacht models.
+
+The source repository is private; its rendered resource-pack assets become downloadable
+with the public master pack when that release is approved and published. Plugin JARs are
+released separately from the pack. Pair these assets with the matching WolfCars plugin;
+the Java-only master pack does not provide a Bedrock model conversion.
