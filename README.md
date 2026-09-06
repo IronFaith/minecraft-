@@ -76,7 +76,8 @@ The three checks cover source inventory and pack-format handling, collision reje
 
 WolfCars assets come from the stable sibling checkout `../WolfCars-release/resource-pack`.
 Create that checkout from the private `IronFaith/WolfCars` repository; the initial accepted
-release is tag `v1.0.15`, commit `36d9df6e90b453a91e156f6a5ff68308c291f9d4`.
+release was tag `v1.0.15`. The current accepted release is tag `v1.0.17`,
+commit `e6dbacf3ebe2233e763f22114877ad7b7593b775`.
 Keep this checkout on an accepted release when preparing the master pack. The development
 checkout and unfinished vehicle work remain independent. The pack includes the Corvette,
 Toyota-style Trail 4x4, Countach, Challenger, Ducati, runabout, and yacht models.
@@ -85,3 +86,9 @@ The source repository is private; its rendered resource-pack assets become downl
 with the public master pack when that release is approved and published. Plugin JARs are
 released separately from the pack. Pair these assets with the matching WolfCars plugin;
 the Java-only master pack does not provide a Bedrock model conversion.
+
+Master pack r26 preserves all 546 r25 files and adds six WolfCars assets for the truck
+floodlight lenses and original starting, idle and rev audio. Its contents match the
+accepted local equipment pack r29; local trial numbers and master release numbers
+are independent. Pair r26 with WolfCars 1.0.17 for the accepted acceleration, public
+truck cargo, floodlights, engine audio and pedestrian boundaries.
